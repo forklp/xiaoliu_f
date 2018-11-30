@@ -1,0 +1,11 @@
+<view class="container">
+  <text class="title">{{title}}
+</text>
+  <text class='subtitle'>{{author}} {{time}}</text>
+  <image src="{{src1}}" class="image1" mode='widthFix'></image>
+  <image src="{{src2}}" class="image2" mode='widthFix'></image>
+    <rich-text nodes='{{nodes}}'></rich-text>
+
+
+
+</view>

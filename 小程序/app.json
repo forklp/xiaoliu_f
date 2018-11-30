@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/introduction/introduction",
+    "pages/articles/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "小留同学",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "debug": true
+}

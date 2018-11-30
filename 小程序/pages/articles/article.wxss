@@ -1,0 +1,16 @@
+/* pages/articles/article.wxss */
+.title{
+  margin: 3%;
+}
+.subtitle{
+color: rgb(0, 162, 255);
+font-size: 30rpx;
+ margin: 3%;
+}
+.image1{
+  width: 600rpx;
+
+}
+.image2{
+  width: 200rpx;
+}

@@ -1,0 +1,7 @@
+
+
+<view class="container">
+<text class="title">{{title}}
+</text>
+<image src="{{src}}" class="image" bindtap='magnify' mode='widthFix'></image>
+</view>

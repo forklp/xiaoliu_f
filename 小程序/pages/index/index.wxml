@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="title">小留同学信息平台</text>
+  <navigator url="{{url}}" open-type='navigate' class="introduction">
+    <image src="{{src}}" mode='widthFix' class='img'>图片</image>
+    <rich-text nodes="{{nodes}}"></rich-text>
+  </navigator>
+  <view class="menu">
+    <button class="button" type='primary' wx:for="{{menu}}" data-id="{{index}}" bindtap="click">{{item.submenu}}</button>
+  </view>
+  <view wx:for="{{array1}}">
+    <navigator class="article" hidden="{{currentTab!=0}}" url="{{item.url}}">
+     <view>  {{item.message}}
+      </view>
+      <image class="newsImage" mode='widthFix' src=" {{item.image}}">
+      </image>
+    </navigator>
+  </view>
+
+  <view wx:for="{{array2}}">
+    <navigator class="article" hidden="{{currentTab!=1}}" url="{{item.url}}">
+      <view> {{item.message}}
+      </view>
+      <image class="newsImage " mode='widthFix' src=" {{item.image}} ">
+      </image>
+    </navigator>
+  </view>
+
+  <view wx:for="{{array3}}">
+    <navigator class="article" hidden="{{currentTab!=2}}" url="{{item.url}}">
+      <view> {{item.message}}
+      </view>
+      <image class="newsImage" mode='widthFix' src=" {{item.image}} ">
+      </image>
+    </navigator>
+  </view>
+</view>

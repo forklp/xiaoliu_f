@@ -1,0 +1,6 @@
+.image{
+  width: 600rpx;
+}
+.title{
+  margin: 5%;
+}
