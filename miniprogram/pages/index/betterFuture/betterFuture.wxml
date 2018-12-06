@@ -1,0 +1,5 @@
+<!--pages/index/betterFuture/betterFuture.wxml-->
+
+<view class="container">
+  <text class="Test" >safsafs</text>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/index/select/select.wxml-->
+
+<view class='container'>
+  <form bindsubmit='formSubmit' class="selectForm">
+  <view class="lineBox">
+    <image class="nameImage" src="../../images/username.png"></image>
+    <label class="lineBoxLabel">国家地区</label>
+    <view class="selectBox">
+      
+    </view>
+  </view>
+  <view class="lineBox">
+    <image class="nameImage" src="../../images/username.png"></image>
+    <label class="lineBoxLabel">课程类型</label>
+  </view>
+  <view class="lineBox">
+    <image class="nameImage" src="../../images/username.png"></image>
+    <label class="lineBoxLabel">课程类型</label>
+  </view>
+  <view class="lineBox" >
+    <image class="nameImage" src="../../images/username.png"></image>
+    <label class="lineBoxLabel">课程类型</label>
+  </view>
+  <view class="lineBox">
+    <image class="nameImage" src="../../images/username.png"></image>
+    <label class="lineBoxLabel">课程类型</label>
+  </view>
+  <view class="lineBox">
+    <image class="nameImage" src="../../images/username.png"></image>
+    <label class="lineBoxLabel">课程类型</label>
+  </view>
+  </form>
+  <button type="primary" form-type='submit' class='primaryButton'>筛选</button>
+</view>

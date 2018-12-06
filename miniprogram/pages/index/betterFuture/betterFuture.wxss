@@ -1,0 +1,17 @@
+/* pages/index/betterFuture/betterFuture.wxss */
+.container{
+  width:200rpx;
+  height: 100rpx;
+  border-color:black;
+  border-width:medium;
+  
+
+}
+.Test{
+  width:100%;
+  height:100%;
+  margin-left: 2px;
+  border-width: medium;
+  border-color: black;
+  border-style: solid;
+}

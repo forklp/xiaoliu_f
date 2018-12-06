@@ -1,0 +1,36 @@
+/* pages/index/select/select.wxss */
+.primaryButton{
+  width:80%;
+
+}
+.nameImage, .keyImage {
+  margin-left: 22px;
+  width: 28rpx;
+  height: 28rpx
+}
+.lineBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 600rpx;
+  height: auto;
+  margin-bottom: 70rpx;
+  border-color: rgb(221, 216, 216);
+  border-style: solid;
+  border-width: 4rpx;
+  border-radius: 8%;
+  align-items: center;
+}
+.lineBoxLabel {
+  margin: 15px 15px 15px 10px;
+  color: #545454;
+  font-size: 28rpx;
+  border:8rpx, black;
+  border-radius: 20;
+}
+.container{
+  display: flex;
+  width:750rpx;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
