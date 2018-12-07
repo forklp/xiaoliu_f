@@ -5,7 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    projects:[{
+      projectName:"日本关西大学：日本文化&语言学习",
+      property:"语言学习",
+      fee:"10343",
+      language:"英语",
+      gpa:"未做说明",
+      startTime:"2018-6-1",
+      endTime:"2018-7-31",
+    }, {
+        projectName: "日本关西大学：日本文化&语言学习",
+        property: "语言学习",
+        fee: "10343",
+        language: "英语",
+        gpa: "未做说明",
+        startTime: "2018-6-1",
+        endTime: "2018-7-31",
+      },
+      {
+        projectName: "日本关西大学：日本文化&语言学习",
+        property: "语言学习",
+        fee: "10343",
+        language: "英语",
+        gpa: "未做说明",
+        startTime: "2018-6-1",
+        endTime: "2018-7-31",
+      },
+      {
+        projectName: "日本关西大学：日本文化&语言学习",
+        property: "语言学习",
+        fee: "10343",
+        language: "英语",
+        gpa: "未做说明",
+        startTime: "2018-6-1",
+        endTime: "2018-7-31",
+      },],
   },
 
   /**
@@ -62,5 +96,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  showList: function(event){
+    console.log(event.target.dataset);
+  },
+  search: function(){
+    wx.navigateTo({
+      url: '../select/select',
+    })
   }
 })
