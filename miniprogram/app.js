@@ -10,6 +10,7 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {'token':'',}//token
+    
   }
 })

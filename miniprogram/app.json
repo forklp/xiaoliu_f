@@ -1,14 +1,17 @@
 {
   "pages": [
-    "pages/index/login/login",
-    "pages/index/betterFuture/betterFuture",
-    "pages/index/select/select",
-    
-    
-    
-    
     "pages/index/forgetPwd/forgetPwd",
+    "pages/index/select/select",
+    "pages/index/login/login",
     "pages/index/register/register",
+    
+    
+    "pages/index/betterFuture/betterFuture",
+    
+    
+    
+    
+    
     
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",

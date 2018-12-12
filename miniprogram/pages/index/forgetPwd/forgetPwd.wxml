@@ -17,7 +17,7 @@
     <view class="inputView">
       <image class="keyImage" src="../../images/password.png"></image>
       <label class="loginLab">密码</label>
-      <input class="inputText" password="true" placeholder="请输入密码" name="password"/>
+      <input class="inputText" password="true" placeholder="请输入新的密码" name="password"/>
     </view>
     <view class="line"></view>
     <view class="inputView">

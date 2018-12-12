@@ -13,7 +13,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   width: 600rpx;
-  height: 130rpx;
+  height: 200rpx;
   margin-bottom: 40rpx;
   margin-top:20rpx;
   border-color: rgb(221, 216, 216);

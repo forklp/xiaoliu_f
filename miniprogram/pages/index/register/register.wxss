@@ -115,20 +115,27 @@ page{
 }
 .verifCode{
   width:574rpx;
-  height:92rpx;
+  /* height:60rpx; */
   display: flex;
+  flex-direction: row;
+  height:80rpx;
+  align-items: center;
+  
   background-color:white;
+  
 }
 .getVerifCodeBtn{
   margin-right:0%;
   width:auto;
   height:100%;
-  text-align: center;
+  /* text-align: center; */
   font-size:25rpx;
   background:none;
-  margin-top:10rpx;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
   border-color:#000;
-
+  flex-wrap: nowrap;
 }
 .getVerifCodeBtn::after{
   border:none;
@@ -136,6 +143,12 @@ page{
 .verifCodeInput{
   font-size:30rpx;
   text-align: left;
-  margin-top:20rpx;
   margin-left:40rpx;
+  
+}
+.inviteCodeInput{
+  width:100%;
+  font-size:30rpx;
+  text-align: right;
+  margin-right:40rpx;
 }
