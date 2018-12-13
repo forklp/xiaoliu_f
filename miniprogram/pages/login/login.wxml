@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="login-icon">
+    <image class="login-img" src="../../images/loginimg.png"> </image>
+  </view>
+  <view><text>\n\n\n</text></view>
+  <form bindsubmit='formSubmit' class="loginForm">
+  <view class="login-from">
+
+    <view class="inputView">
+      <image class="nameImage" src="../../images/username.png"></image>
+      <label class="loginLab">账号</label>
+      <input type='number' class="inputText" placeholder="请输入手机号" name="username"/>
+    </view>
+    
+    <view class="line"></view>
+    
+    <view class="inputView">
+      <image class="keyImage" src="../../images/password.png"></image>
+      <label class="loginLab">密码</label>
+      <input class="inputText" password="true" placeholder="请输入密码" name="password"/>
+    </view>
+    
+    <view class="lineBox" >
+      <!-- <button class="registerBtn" bintap="registerBtn">没有账户</button> -->
+      <button class="registerBtn" bindtap='registerBtn'>没有账户</button>
+      <button class="forPwdBtn" bindtap="forgetPwd">忘记密码</button>
+    </view>
+    <!--按钮-->
+    <view class="loginBtnView">
+      <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled='{{disabled}}' 
+      form-type="submit">登录</button>
+    </view>
+    
+  </view>
+  </form>
+  
+ 
+  
+</view> 
