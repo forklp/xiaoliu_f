@@ -62,16 +62,16 @@ Page({
           success: function(res) {
             console.log(res.data);
             var array1 = [];
-
-
+            if (res.data) {
             for (var i = 0; i < 4; i++) {
-              if (res.data[i]) {
+          if(res.data[i]){
                 var arrayItem = {
                   message: res.data[i].companyTitle,
                   image: res.data[i].imageUrl,
                   url: res.data[i].companyUrl,
                 };
                 array1.push(arrayItem);
+              }
               }
             }
             wx.showLoading({
@@ -262,12 +262,14 @@ Page({
             console.log(res.data);
             var array1 = [];
             for (var i = 0; i < 4; i++) {
+              if(res.data[i]){
               var arrayItem = {
                 message: res.data[i].companyTitle,
                 image: res.data[i].imageUrl,
                 url: res.data[i].companyUrl,
               };
               array1.push(arrayItem);
+            }
             }
             wx.showLoading({
               title: '加载中',
