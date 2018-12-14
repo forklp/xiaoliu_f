@@ -1,0 +1,87 @@
+<!--pages/index/select/select.wxml-->
+<!-- 
+国家
+开始时间
+时间 
+类型
+-->
+
+<view class='container'>
+  <form bindsubmit='formSubmit' class="selectForm">
+  <view class="lineBox">
+    <view class="leftBox">
+      <image class="nameImage" src="../../images/username.png"></image>
+      <label class="lineBoxLabel">国家地区</label>
+    </view>
+    <view class="selectBox">
+      <view wx:if="{{!isSelected.countries}}" class='listItem' bindtap='showList' data-name='countries'>
+          {{selected.countries}}
+      </view>
+      <scroll-view wx:if="{{isSelected.countries}}" scroll-y class="scrollItem">
+      <block wx:for="{{sourceData.countries}}" wx:for-item="item" wx:for-index="index" wx:key="keys">
+        <view wx:if="{{isSelected.countries}}" class="listItem" data-item='countries' bindtap='selectThis' data-index='{{index}}' data-name="{{item}}">    
+         {{item}}
+        </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="lineBox">
+    <view class="leftBox">
+      <image class="nameImage" src="../../images/username.png"></image>
+      <label class="lineBoxLabel">课程类型</label>
+    </view> 
+    <view class="selectBox">
+      <view wx:if="{{!isSelected.courses}}" class='listItem' bindtap='showList' data-name='courses'>
+          {{selected.courses}}
+      </view>
+      <scroll-view wx:if="{{isSelected.courses}}" scroll-y class="scrollItem">
+      <block wx:for="{{sourceData.courses}}" wx:for-item="item" wx:for-index="index" wx:key="keys">
+        <view wx:if="{{isSelected.courses}}" class="listItem" data-item='courses' bindtap='selectThis' data-index='{{index}}' data-name="{{item}}">    
+         {{item}}
+        </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view>
+  
+  
+  <view class="lineBox">
+    <view class="leftBox">
+      <image class="nameImage" src="../../images/username.png"></image>
+      <label class="lineBoxLabel">时长</label>
+    </view>
+    <view class="selectBox">
+      <view wx:if="{{!isSelected.studentsNum}}" class='listItem' bindtap='showList' data-name='studentsNum'>
+          {{selected.studentsNum}}
+      </view>
+      <scroll-view wx:if="{{isSelected.studentsNum}}" scroll-y class="scrollItem">
+      <block wx:for="{{sourceData.studentsNum}}" wx:for-item="item" wx:for-index="index" wx:key="keys">
+        <view wx:if="{{isSelected.studentsNum}}" class="listItem" data-item='studentsNum' bindtap='selectThis' data-index='{{index}}' data-name="{{item}}">    
+         {{item}}
+        </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="lineBox">
+    <view class="leftBox">
+      <image class="nameImage" src="../../images/username.png"></image>
+      <label class="lineBoxLabel">开始时间</label>
+    </view>
+    <view class="selectBox">
+      <view wx:if="{{!isSelected.startTime}}" class='listItem' bindtap='showList' data-name='startTime'>
+          {{selected.startTime}}
+      </view>
+      <scroll-view wx:if="{{isSelected.startTime}}" scroll-y class="scrollItem">
+      <block wx:for="{{sourceData.startTime}}" wx:for-item="item" wx:for-index="index" wx:key="keys">
+        <view wx:if="{{isSelected.startTime}}" class="listItem" data-item='startTime' bindtap='selectThis' data-index='{{index}}' data-name="{{item}}">    
+         {{item}}
+        </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view>
+  </form>
+  <button type="primary" form-type='submit' class='primaryButton'>筛选</button>
+</view>

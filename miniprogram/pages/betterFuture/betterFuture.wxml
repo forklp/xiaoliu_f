@@ -1,0 +1,46 @@
+<!--pages/index/betterFuture/betterFuture.wxml-->
+
+<view class="container">
+  <block wx:for="{{projects}}" wx:for-item="item" wx:for-index="index" wx:key="keys">
+  <view class="lineBox">
+    <view class="titleBox">
+      <text class="title">{{item.projectName}}</text>
+    </view>
+    <view class="smallLineBox">
+      <view class="lineItem" >
+        <view class="textBox">
+          <text class="lineText" decode="{{true}}">项目性质&nbsp;:&nbsp;&nbsp;{{item.property}}</text>
+        </view>
+        <view class="textBox">
+          <text class="lineText" decode="{{true}}">项目费用&nbsp;:&nbsp;&nbsp;{{item.fee}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="smallLineBox">
+      <view class="lineItem">
+        <view class="textBox">
+          <text class="lineText" decode="{{true}}">语言种类&nbsp;:&nbsp;&nbsp;{{item.language}}</text>
+        </view>
+        <view class="textBox">
+          <text class="lineText" decode="{{true}}">GPA要求&nbsp;:&nbsp;&nbsp;{{item.gpa}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="smallLineBox">
+      <view class="lineItem">
+        <view class="textBox">
+          
+          <text class="lineText" decode="{{true}}">时间&nbsp;{{item.startTime}}&nbsp;~&nbsp;{{item.endTime}}</text>
+        </view>
+        <view class="textBox">
+          <text class="lineText" decode="{{true}}"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  </block>
+  <view class="searchButton">
+      <image src="../../images/searchIcon.png" bindtap="search"> </image>
+  </view> 
+</view>

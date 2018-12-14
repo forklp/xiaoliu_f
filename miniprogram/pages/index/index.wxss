@@ -1,0 +1,46 @@
+/**index.wxss**/
+
+
+.title{
+font-size: 50rpx;
+margin:10%;
+}
+.img{
+  width:600rpx; 
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  margin: 10% 0;
+}
+ .button{
+  margin:0 5rpx;
+  width: 200rpx;
+  font-size: 30rpx;
+box-shadow: 6rpx 6rpx 1rpx grey;
+}
+.button-hover{
+transform: scale(1.05);
+transition:0.2s; 
+}
+.newsImage{
+ width: 300rpx;
+border-radius: 20rpx;
+}
+.article{
+  border: 5rpx groove rgb(255, 196, 0);
+  border-radius: 20rpx;
+  width: 600rpx;
+  display: flex;
+flex: auto;
+justify-content: space-between;
+line-height: 110rpx;
+margin: 10rpx;
+background-color:rgb(62, 219, 247);
+box-shadow: 6rpx 6rpx 1rpx grey;
+font-size: 30rpx;
+}
+.article-hover{
+transform: scale(1.1);
+transition:0.2s; 
+}

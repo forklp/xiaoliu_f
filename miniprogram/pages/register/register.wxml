@@ -1,0 +1,61 @@
+<!--pages/index/register.wxml-->
+<view class="container">
+  <view class="login-icon">
+    <image class="login-img" src="../../images/loginimg.png"> </image>
+  </view>
+  <view><text></text></view>
+  <form bindsubmit='formSubmit' class="registerForm">
+  <view class="login-from">
+
+    <view class="inputView">
+      <image class="nameImage" src="../../images/username.png"></image>
+      <label class="loginLab">账号</label>
+      <input type='number' class="inputText" placeholder="请输入手机号" name="account" bindinput='inputPhone'/>
+    </view>
+    
+    <view class="line"></view>
+    <view class="inputView">
+      <image class="keyImage" src="../../images/password.png"></image>
+      <label class="loginLab">密码</label>
+      <input class="inputText" password="true" placeholder="请输入密码" name="password1"/>
+    </view>
+    <view class="line"></view>
+    <view class="inputView">
+      <image class="keyImage" src="../../images/password.png"></image>
+      <label class="loginLab">密码</label>
+      <input class="inputText" password="true" placeholder="再次输入密码" name="password2"/>
+    </view>
+    <view class="line"></view>
+    <view class="verifCode">
+      
+      <!-- <image class="keyImage" src="../../images/password.png"></image> -->
+      
+      <!-- <input class="inputText" password="false" placeholder="请输入验证码" name="verifCode"/> -->
+      
+      <input type='number' class="verifCodeInput" placeholder='请输入验证码' name='verifCode'/>
+      
+      <button class="getVerifCodeBtn" bindtap='getVerifCode' disabled='{{btndisabled}}'>
+        <text class="buttonText">{{verifText}}</text>
+      </button>
+      
+    </view>
+    <view class="line"></view>
+    <view class="verifCode">
+      <input type='number' class="inviteCodeInput" placeholder='请输入邀请码' name='invitecode' />
+    </view>
+    <view class="lineBox" >
+
+      <button class="backLoginBtn" bindtap='backLoginBtn'>返回登录</button>
+      <button class="forPwdBtn" bindtap="forgetPwd">忘记密码</button>
+    </view>
+    <!--按钮-->
+    <view class="loginBtnView">
+      <button class="registerBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled='{{disabled}}'
+      form-type="submit">注册</button>
+    </view>
+  </view>
+  </form>
+  
+ 
+  
+</view> 
