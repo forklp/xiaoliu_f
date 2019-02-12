@@ -1,0 +1,84 @@
+.container{
+  display:block;
+  width:675rpx;
+  height: 1200rpx;
+  margin-left:5%;
+  margin-right: 5%;
+  /* border: solid; */
+  /* border-color:red; */
+}
+.footer{
+  width:660rpx;
+  /* margin-left:auto;
+  margin-right:auto; */
+  height: 120rpx;
+  position: fixed;
+  bottom: 0rpx;
+  display:flex;
+  flex-flow:row;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border:solid; */
+ 
+  border-color:rgb(133, 110, 214);
+}
+.footerButton{
+  display:flex;
+  flex:column;
+  width:20%;
+}
+.footerImage{
+  margin:auto;
+  width:90%;
+  height:90%;
+}
+.swiperItem{
+  width:100%;
+  height:20%;
+  /* border:solid; */
+  
+}
+.swiper{
+  height:20%;
+  width:100%;
+  /* border:solid; */
+}
+.kaoQing{
+  height:15%;
+  /* border:solid; */
+}
+.experienceContainer{
+  height:34%;
+  /* border:solid; */
+}
+
+.contactUs{
+  height:30%;
+  /* border:solid; */
+}
+.swiperImage{
+  height:240rpx;
+  width:100%;
+}
+.kaoQingItems{
+  display:flex;
+  flex-direction: row;
+  height:80%;
+  margin-top:5%;
+  justify-content: space-between;
+  /* border:solid; */
+}
+.kaoQingL{
+  height:100%;
+  width:45%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.kaoQingR{
+  height:100%;
+  width:45%;
+  align-items: center;
+  display:flex;
+  justify-content: space-between;
+}

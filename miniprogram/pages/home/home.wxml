@@ -1,0 +1,113 @@
+<view class="page">
+  <view class="container">
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" >
+      <block wx:for="{{recentArticles}}" wx:item="item">
+        <swiper-item >
+          <view class="swiperItem">
+            <image src="{{item.src}}" class="swiperImage" alt="{{item.alt}}"></image>
+            
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="kaoQing">
+      <view class="weui-panel weui-panel_access" style="height:100%;">
+        <view class="weui-panel_hd" style="height:10%;">
+          <view class="weui-cell" style="height:100%;">
+            <view class="weui-cell__hd" >
+              <image src="../../images/time.jpg" style="width:30rpx; height:30rpx;margin-right:10rpx;"/> 
+            </view>
+            <view class="weui-cell_bd weui-cell_primary" style="font-size:25rpx;font-weight:bold">考情分享</view>
+            <navigator class="weui-cell__ft weui-cell__ft_in-access" style="margin-left:250rpx;font-size:25rpx;" url="../experiencex/experiences">查看更多</navigator>
+          </view>
+         
+        </view>
+        <view class="kaoQingItems">
+          <view class="kaoQingL"> 
+            <image class="kaoQingImg" src="{{kaoQing1.imageSrc}}" mode="widthFix" style="width:30%;"/>
+            <text bindtap="toArticle" data-id="{{kaoQing1.id}}">
+              <text style="font-size:28rpx;font-style:bold">{{kaoQing1.articleTitle}}\n</text>
+              
+              <text style="font-size:25rpx;font-style:lighter;align:center;">进来试试</text>
+           
+           </text>
+          </view>
+          <view class="kaoQingR"> 
+            <image class="kaoQingImg" src="{{kaoQing2.imageSrc}}" mode="widthFix" style="width:30%;"/>
+            <text bindtap="toArticle" data-id="{{kaoQing2.id}}" style="margin-right:20rpx;">
+              <text style="font-size:28rpx;font-style:bold">{{kaoQing1.articleTitle}}\n</text>
+              
+              <text style="font-size:25rpx;font-style:lighter;">进来试试</text>
+           
+           </text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="experienceContainer">
+      <view class="weui-panel weui-panel_access">
+        <view class="weui-panel_hd" style="height:50rpx;">
+          <view class="weui-cell" style="height:100%;">
+            <view class="weui-cell__hd" >
+              <image src="../../images/time.jpg" style="width:40rpx; height:40rpx;margin-right:10rpx;"/> 
+            </view>
+            <view class="weui-cell_bd weui-cell_primary" style="font-size:30rpx;font-weight:bold">经验分享</view>
+            <navigator class="weui-cell__ft weui-cell__ft_in-access" style="margin-left:250rpx;font-size:30rpx;" url="../experiencex/experiences">查看更多</navigator>
+          </view>
+        </view>
+        <view class="weui-panel__bd" style="height:360rpx">
+                <view class="weui-media-box weui-media-box_appmsg" >
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{article1.imageSrc}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                       
+                        <view class="weui-media-box__desc" style="font-weight:bold" bindtap="toArticle" data-id="{{article1.id}}">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                </view>   
+                </view>
+                <view class="weui-media-box weui-media-box_appmsg"  >
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{article2.imageSrc}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                   
+                        <view class="weui-media-box__desc" style="font-weight:bold" bindtap="toArticle" data-id="{{article2.id}}">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    </view>
+                </view>
+        </view>
+      
+      </view>
+    </view>
+    <view class="contactUs">
+      
+          <view class="weui-cell" style="border:none;border-color:#000;background:none;height:20rpx;">
+            <view class="weui-cell_hd" > 
+              <image src="{{contactUs.icon}}" style="width:40rpx;height:40rpx;"/>   
+            </view>
+            <view class="weui-cell_bd" style="font-size:23rpx;font-weight:bold">联系我们</view>
+        
+      </view>
+      <text style="font-size:23rpx;">了解更多资讯，欢迎扫描二维码联系小留客服</text>
+      <image src="{{qrCode}}" style="margin-left:230rpx;width:170rpx;height:170rpx;"/>
+    </view> 
+    <view class="footer">
+      <view class="footerButton">
+        <image src="../../images/shouye.png" class="footerImage" bindtap='toShouYe'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/shangcheng.png" class="footerImage" bindtap='toShangCheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/tisheng.png" class="footerImage" bindtap='toTiSheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/fenxiang.png" class="footerImage" bindtap='toFenXiang'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/wode.png" class="footerImage" bindtap='toWoDe'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+

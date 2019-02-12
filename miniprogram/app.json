@@ -1,14 +1,18 @@
+
 {
   "pages": [
-    
+    "pages/home/home",
     "pages/index/index",
+    "pages/register/register",
+    "pages/select/select",
+    
     "pages/introduction/introduction",
     "pages/articles/articles",
     "pages/betterFuture/betterFuture",
     "pages/login/login",
-    "pages/forgetPwd/forgetPwd",
-    "pages/select/select",
-    "pages/register/register"
+    "pages/forgetPwd/forgetPwd"
+    
+    
     
   ],
   "window": {
