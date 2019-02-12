@@ -1,0 +1,21 @@
+<!--pages/experience/experience.wxml-->
+<view class="page">
+  <view wx:for="{{items}}" class="itemsContainer" wx:for-item="item" wx:key="id">
+    <view class="item" id="{{item.id}}">
+      <view class="left"> 
+        <image style="width:90%;height:90%;margin-left:5%;margin-top:5%;" src="{{item.imageSrc}}"> </image>
+      </view>
+      <view class="middle">
+        <view class="title" bindtap="toArticle" data-id="{{item.id}}">{{item.title}}</view>
+      </view>
+      <view class="right">
+        <image wx:if="{{!item.like}}" bindtap="clickLike" data-id="{{item.id}}" src="../../images/like.png" mode="widthFix" style="width:100%;padding-top:130rpx;" />
+        <image wx:if="{{item.like}}" bindtap="clickLike" data-id="{{item.id}}" src="../../images/likeRed.png" mode="widthFix" style="width:100%;padding-top:130rpx;" />
+      </view>
+    </view>
+  </view>
+  <view class="weui-loadmore" wx:if="{{loading}}">
+              <view class="weui-loading"></view>
+              <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</view>
