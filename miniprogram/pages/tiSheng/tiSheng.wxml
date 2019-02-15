@@ -1,0 +1,75 @@
+<!--pages/tiSheng/tiSheng.wxml-->
+<view class="page">
+
+  <view class="weui-cell weui-cell_access">
+      <view class="weui-cell_hd">
+        <image src="../../images/youXue.png" style="width:50rpx;height:50rpx;margin-right:10rpx;margin-top:10rpx;" />
+      </view>
+      <view class="weui-cell__bd">游学</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 17px;">查看全部</view>         
+      </view>
+  </view>
+  <view class="itemsBox">
+    <block wx:for="{{youXueItems}}" wx:for-item="item" wx:key="id">
+      <view class="itemType1">
+        <image src="{{item.src}}" style="width:100%;" mode="widthFix" data-id="{{item.id}}" bindtap="toArticle"/>
+      </view>
+    </block>
+  </view>    
+
+  <view class="weui-cell weui-cell_access">
+      <view class="weui-cell_hd">
+        <image src="../../images/research.png" style="width:50rpx;height:50rpx;margin-right:10rpx;margin-top:10rpx;" />
+      </view>
+      <view class="weui-cell__bd">科研</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 17px;">查看全部</view>         
+      </view>
+  </view>
+  <view class="itemsBox">
+    <block wx:for="{{researchItems}}" wx:for-item="item" wx:key="id">
+      <view class="itemType2">
+        <image src="{{item.src}}" style="width:100%;" mode="widthFix" data-id="{{item.id}}" bindtap="toArticle"/>
+      </view>
+    </block>
+  </view>    
+
+
+  <view class="weui-cell weui-cell_access">
+      <view class="weui-cell_hd">
+        <image src="../../images/shiXi.png" style="width:50rpx;height:50rpx;margin-right:10rpx;margin-top:10rpx;" />
+      </view>
+      <view class="weui-cell__bd">实习</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 17px;">查看全部</view>         
+      </view>
+  </view>
+  <view class="itemsBox">
+    <block wx:for="{{shiXiItems}}" wx:for-item="item" wx:key="id">
+      <view class="itemType1">
+        <image src="{{item.src}}" style="width:100%;" mode="widthFix" data-id="{{item.id}}" bindtap="toArticle"/>
+      </view>
+    </block>
+  </view> 
+  <view class="footer">
+      <view class="footerButton">
+        <image src="../../images/shouye.png" class="footerImage" bindtap='toShouYe'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/shangcheng.png" class="footerImage" bindtap='toShangCheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/tisheng.png" class="footerImage" bindtap='toTiSheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/fenxiang.png" class="footerImage" bindtap='toFenXiang'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/wode.png" class="footerImage" bindtap='toWoDe'></image>
+      </view>
+  </view>
+  <view class="searchButton">
+      <image src="../../images/searchIcon.png" bindtap="search" mode="widthFix" style="width:80rpx;"> </image>
+  </view> 
+</view>
