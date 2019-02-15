@@ -10,7 +10,7 @@
   <form bindsubmit='formSubmit' class="selectForm">
   <view class="lineBox">
     <view class="leftBox">
-      <image class="nameImage" src="../../images/username.png"></image>
+      <image class="nameImage" src="../../images/countries.png"></image>
       <label class="lineBoxLabel">国家地区</label>
     </view>
     <view class="selectBox">
@@ -28,8 +28,8 @@
   </view>
   <view class="lineBox">
     <view class="leftBox">
-      <image class="nameImage" src="../../images/username.png"></image>
-      <label class="lineBoxLabel">课程类型</label>
+      <image class="nameImage" src="../../images/projectType.png"></image>
+      <label class="lineBoxLabel">项目类型</label>
     </view> 
     <view class="selectBox">
       <view wx:if="{{!isSelected.courses}}" class='listItem' bindtap='showList' data-name='courses'>
@@ -48,8 +48,8 @@
   
   <view class="lineBox">
     <view class="leftBox">
-      <image class="nameImage" src="../../images/username.png"></image>
-      <label class="lineBoxLabel">时长</label>
+      <image class="nameImage" src="../../images/studentType.png"></image>
+      <label class="lineBoxLabel">学生类型</label>
     </view>
     <view class="selectBox">
       <view wx:if="{{!isSelected.studentsNum}}" class='listItem' bindtap='showList' data-name='studentsNum'>
@@ -66,8 +66,8 @@
   </view>
   <view class="lineBox">
     <view class="leftBox">
-      <image class="nameImage" src="../../images/username.png"></image>
-      <label class="lineBoxLabel">开始时间</label>
+      <image class="nameImage" src="../../images/lastTime.png"></image>
+      <label class="lineBoxLabel">持续时间</label>
     </view>
     <view class="selectBox">
       <view wx:if="{{!isSelected.startTime}}" class='listItem' bindtap='showList' data-name='startTime'>
@@ -83,5 +83,5 @@
     </view>
   </view>
   </form>
-  <button type="primary" form-type='submit' class='primaryButton'>筛选</button>
+  <button type="primary" form-type='submit' class='primaryButton'>搜索</button>
 </view>

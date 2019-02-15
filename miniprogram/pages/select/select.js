@@ -36,12 +36,12 @@ Page({
    */
   onLoad: function (options) {
       this.setData({
-        sourceData: { countries: ['美国', '欧洲', '日本', '其他'],
-          courses:['游学','实习','实训','科研实训',],
+        sourceData: { countries: ['未选择','美国', '英国', '新加坡', '欧洲','日本','香港','大陆','其他'],
+          courses:['未选择','游学','实习','科研',],//项目类型
           languages:['英语','中文','日语','其他'],
           fees:['10k','20k','30k'],
-          studentsNum:['10','20','30'],
-          startTime:['2017 9 13']
+          studentsNum:['未选择','人文社科','理工','医学','商科','艺术'],//改为学生类型
+          startTime: ['未选择','1周', '2周', '一个月', '其他'],//改为持续时间
         },
       });
       this.setData({

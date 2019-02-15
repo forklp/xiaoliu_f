@@ -5,8 +5,8 @@
 }
 .nameImage, .keyImage {
   margin-left: 22px;
-  width: 28rpx;
-  height: 28rpx
+  width: 60rpx;
+  height:60rpx;
 }
 .lineBox{
   display: flex;
