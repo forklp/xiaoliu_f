@@ -1,0 +1,20 @@
+<!--pages/projects/projects.wxml-->
+<!-- 给游学科研，实习提供的项目栏 -->
+<view class="page">
+  <block wx:for="{{items}}" wx:key="id" wx:for-item="item">
+    <view class="item">
+      
+      <image class="imageBox" mode="widthFix" src="{{item.imageSrc}}" style=""/>
+     
+      <view class="middleBox" style="font-size:30rpx;">
+        <text decode='true'>国家地区&nbsp;&nbsp;&nbsp;&nbsp;{{item.country}}</text>
+        <text decode='true'>学生类型&nbsp;&nbsp;&nbsp;&nbsp;{{item.studentType}}</text>
+        <text decode='true'>持续时间&nbsp;&nbsp;&nbsp;&nbsp;{{item.lastTime}}</text>
+        <text decode='true'>项目类型&nbsp;&nbsp;&nbsp;&nbsp;{{item.projectType}}</text>
+      </view>
+      <view class="rightBox">
+        <view bindtap="toProject" data-id="{{item.id}}" style="margin-top:100%;margin-right:2%;font-size:30rpx;color:lightGray;" >了解更多</view>
+      </view>
+    </view>
+  </block>
+</view>

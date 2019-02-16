@@ -1,0 +1,29 @@
+/* pages/projects/projects.wxss */
+.item{
+  margin-bottom:20rpx;
+  width:100%;
+  border-bottom:solid;
+  border-color:lightgray;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imageBox{
+  width:30%;
+  
+}
+.middleBox{
+  display:flex;
+  flex-direction: column;
+  width:40%;
+  /* border:solid; */
+  justify-content: space-around;
+  height:80%;
+  margin-top:20rpx;
+
+}
+.rightBox{
+  width:20%;
+  /* border:solid; */
+  
+}
