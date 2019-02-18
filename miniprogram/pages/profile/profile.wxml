@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+<view class='userInfo'>
+  <view class="profile">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+    </block>
+
+  </view>
+          <view class="userinfo-text">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+</view>
+<navigator wx:for="{{array}}" url="{{item.url}}" class="menu" hover-class='menu-hover'>
+<view><image class="img" mode='widthFix' src="{{item.src}}"></image></view>
+
+<view class='pageName'>{{item.menu}}</view>
+</navigator >
+  <view class="footer">
+      <view class="footerButton">
+        <image src="../../images/shouye.png" class="footerImage" bindtap='toShouYe'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/shangcheng.png" class="footerImage" bindtap='toShangCheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/tisheng.png" class="footerImage" bindtap='toTiSheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/fenxiang.png" class="footerImage" bindtap='toFenXiang'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/wode.png" class="footerImage" bindtap='toWoDe'></image>
+      </view>
+  </view>
+</view>
+

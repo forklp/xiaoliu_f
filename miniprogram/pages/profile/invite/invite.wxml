@@ -1,0 +1,4 @@
+<view class="container"><image src='' mode='widthFix'></image>
+
+<view>您的邀请码是：</view>
+<text class='guide'>使用规则：</text></view>

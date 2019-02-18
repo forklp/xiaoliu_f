@@ -1,0 +1,67 @@
+/**index.wxss**/
+/* 头像 */
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+padding-bottom: 15%;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-text { 
+display: flex;
+flex-direction: column;
+}
+.userinfo-nickname{
+  color: #aaa;
+}
+/* 菜单 */
+
+.menu{
+  width: 90%;
+
+  margin: 5% auto;
+border-bottom:4rpx black solid;
+display: flex;
+}
+.menu-hover{
+opacity: 0.8;
+transition:0.2s; 
+}
+.img{
+width: 70rpx;
+height: 70rpx;
+margin:auto 3%;
+}
+.pageName{
+  margin-left: 10%;
+}
+/* 底部菜单 */
+.footer{
+  width:660rpx;
+  margin-left:45rpx;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0rpx;
+  display:flex;
+  flex-flow:row;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border:solid; */
+  border-color:rgb(133, 110, 214);
+}
+.footerButton{
+  display:flex;
+  flex:column;
+  width:20%;
+}
+.footerImage{
+  margin:auto;
+  width:90%;
+  height:90%;
+}

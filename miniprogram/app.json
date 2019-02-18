@@ -1,8 +1,15 @@
 
 {
   "pages": [
-    "pages/share/share",
+    "pages/shangcheng/shangcheng",
     "pages/projects/projects",
+    "pages/share/share",
+"pages/profile/profile",
+"pages/profile/profile/collection/collection",
+"pages/profile/profile/invite/invite",
+"pages/profile/profile/question/question",
+"pages/shangcheng/teachers/teachers",
+"pages/shangcheng/institutions/institutions",
     "pages/tiSheng/tiSheng",
     "pages/select/select",
     
@@ -10,9 +17,6 @@
     "pages/kaoQing/kaoQing",
     "pages/experience/experience",
     "pages/home/home",
-    
-    
-    "pages/index/index",
     "pages/register/register",
     
     

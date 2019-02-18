@@ -1,0 +1,131 @@
+<!--index.wxml-->
+
+<view class="container">
+<!--导航栏-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'item_active' : ''}}" bindtap="navbarTap">{{item}}</text>
+</view>
+
+ <image mode='widthFix' src='{{src[0]}}'></image>
+
+<!-- 外语培训 -->
+<view hidden="{{currentTab!==0}}" class="content">
+
+
+<view class="menu">
+
+ <image class='img' mode='widthFix' src='{{src[1]}}'></image>
+<text >名师讲堂</text>
+
+
+<view class='more' bindtap='allTeacher'>查看全部 ></view>
+
+
+
+</view>
+<view>
+<image wx:for="{{teacher}}" class='teacher' mode='widthFix' src='{{item.src}}' bindtap='seeTeachers'></image>
+</view>
+<view class="menu">
+ 
+ <image  class='img' mode='widthFix' src='{{src[2]}}'>  </image>
+<text>优质机构</text>
+
+<view class='more' bindtap='allInstitution'>查看全部 ></view>
+
+</view>
+<view wx:for="{{array1}}">
+    <navigator class="article"  url="{{item.url}}" hover-class="article-hover">
+          <image class="newsImage" mode='widthFix' src=" {{item.image}}"  >
+      </image>
+     <view class='insName'>  {{item.message}}
+      </view>
+
+    </navigator>
+  </view>
+
+</view>
+ 
+<!-- 留学咨询 -->
+<view hidden="{{currentTab!==1}}" class="content">
+
+<view class="menu">
+<view>
+<image wx:for="{{teacher}}" class='teacher' mode='widthFix' src='{{item.src}}' bindtap='allTeachers'></image>
+</view>
+ <image  class='img' mode='widthFix' src='{{src[3]}}'>  </image>
+<text>成功案例</text>
+ 
+
+<view class='more' bindtap='allExamples'>查看全部 ></view>
+</view>
+<image wx:for="{{teacher}}" class='teacher' mode='widthFix' src='{{item.src}}' bindtap='seeExamples'></image>
+
+<view class="menu">
+ 
+ <image  class='img' mode='widthFix' src='{{src[2]}}'>  </image>
+<text>优质机构</text>
+
+<view class='more' bindtap='allInstitution'>查看全部 ></view>
+
+</view>
+<view wx:for="{{array1}}">
+    <navigator class="article"  url="{{item.url}}" hover-class="article-hover">
+          <image class="newsImage" mode='widthFix' src=" {{item.image}}">
+      </image>
+     <view class='insName'>  {{item.message}}
+      </view>
+
+    </navigator>
+  </view>
+
+</view>
+<!-- 作品集 -->
+<view hidden="{{currentTab!==2}}" class="content">
+
+<view class="menu">
+ <image  class='img' mode='widthFix' src='{{src[1]}}'></image>
+<text>优秀作品</text>
+
+<view class='more' bindtap='allWorks'>查看全部 ></view>
+</view>
+<view>
+<image wx:for="{{teacher}}" class='teacher' mode='widthFix' src='{{item.src}}' bindtap='seeWorks'></image>
+</view>
+<view class="menu">
+ <image  class='img' mode='widthFix' src='{{src[2]}}'>  </image>
+<text>优质机构</text>
+<view class='more' bindtap='allInstitution'>查看全部 ></view>
+</view>
+<view wx:for="{{array1}}">
+    <navigator class="article"  url="{{item.url}}" hover-class="article-hover">
+          <image class="newsImage" mode='widthFix' src=" {{item.image}}">
+      </image>
+     <view class='insName'>  {{item.message}}
+      </view>
+
+    </navigator>
+  </view>
+
+
+</view>
+
+<!-- 底部菜单 -->
+ <view class="footer">
+      <view class="footerButton">
+        <image src="../../images/shouye.png" class="footerImage" bindtap='toShouYe'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/shangcheng.png" class="footerImage" bindtap='toShangCheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/tisheng.png" class="footerImage" bindtap='toTiSheng'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/fenxiang.png" class="footerImage" bindtap='toFenXiang'></image>
+      </view>
+      <view class="footerButton">
+        <image src="../../images/wode.png" class="footerImage" bindtap='toWoDe'></image>
+      </view>
+  </view>
+</view>

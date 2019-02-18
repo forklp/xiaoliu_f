@@ -1,0 +1,97 @@
+/**index.wxss**/
+
+/* 导航栏 */
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+width: 100%;
+}
+
+.item{
+  margin: 3%;
+color: gray;
+}
+.item_active{
+border-bottom:4rpx black solid;
+color: black;
+}
+
+/* 内容 */
+.content{
+  width: 100%;
+
+}
+
+/* 菜单 */
+.img{
+width: 70rpx;
+height: 70rpx;
+margin:auto 3%;
+}
+.menu{
+  display: flex;
+  width: 100%;
+  margin:3% auto;
+align-items: center;
+
+}
+.more{
+  color: gray;
+  font-size: 30rpx;
+  margin-left: auto;
+}
+
+
+.teacher{
+width: 28%;
+margin:0 2%; 
+}
+
+
+/* 机构 */
+ .newsImage{
+ width: 50%;
+}
+.article{
+border-bottom:4rpx black solid;
+  width: 100%;
+  display: flex;
+line-height: 70rpx;
+margin: 10rpx;
+
+}
+.insName{
+  align-self: center;
+}
+.article-hover{
+opacity: 0.8;
+transition:0.2s; 
+}
+
+
+/* 底部菜单 */
+.footer{
+  width:660rpx;
+  margin-left:45rpx;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0rpx;
+  display:flex;
+  flex-flow:row;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border:solid; */
+ 
+  border-color:rgb(133, 110, 214);
+}
+.footerButton{
+  display:flex;
+  flex:column;
+  width:20%;
+}
+.footerImage{
+  margin:auto;
+  width:90%;
+  height:90%;
+}

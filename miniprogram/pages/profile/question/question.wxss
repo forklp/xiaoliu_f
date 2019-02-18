@@ -1,0 +1,4 @@
+/* pages/index/consult/consult.wxss */
+.guide{
+  color: gray;
+}
